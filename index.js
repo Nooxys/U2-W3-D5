@@ -14,13 +14,13 @@ const getCards = (cards) => {
       <h5 class="card-title">${card.name}</h5>
       <h6 class="card-title"> Developer: ${card.brand}</h6>
       <p class="card-text">${card.description}</p>
-      <div>
+      <div class= "d-flex justify-content-between" >
       <a href="#" class="btn btn-primary"><i class="bi bi-cart-plus"></i> - ${
         card.price || 'sold-out'
       }€</a>
       <a href="./details.html?gameId=${
         card._id
-      }" class="btn btn-secondary mt-2"><i class="bi bi-info-square"></i> - 
+      }" class="btn btn-secondary"><i class="bi bi-info-square"></i> - 
       Find out more
       </a>
       </div>

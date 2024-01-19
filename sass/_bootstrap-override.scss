@@ -2,12 +2,9 @@
 @import '../bootstrap/scss/variables';
 
 // COLORS
-
-// $new-theme-colors: (
-//   // "color-name": #color
-//   "blue": lightblue
-// );
-
-// $theme-colors: map-merge($theme-colors, $new-theme-colors);
-
+$new-theme-colors: (
+  // "color-name": #color
+  'newblack': rgb(20, 22, 22)
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
 @import '../bootstrap/scss/bootstrap';
