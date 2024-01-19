@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>CRUDazon BackOffice</title>
     <link rel="stylesheet" href="./sass/styles.css" />
     <link
       rel="stylesheet"
@@ -47,7 +47,7 @@
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Search for a game.."
                 aria-label="Search"
               />
               <button class="btn btn-outline-success" type="submit">
@@ -62,6 +62,9 @@
       <div class="container">
         <div class="row justify-content-center bg-body-secondary py-3 my-5">
           <div class="col-12">
+            <h1 id="formName" class="text-center mb-5">
+              Create a Card for your Videogame here:
+            </h1>
             <form id="myForm">
               <div class="mb-3">
                 <label for="nameInput" class="form-label">Name</label>
@@ -104,9 +107,9 @@
               <div class="mb-3">
                 <label for="priceInput" class="form-label">Price</label>
                 <input
-                  min="0"
                   required
                   type="number"
+                  min="0"
                   class="form-control"
                   id="priceInput"
                 />
